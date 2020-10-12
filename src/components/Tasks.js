@@ -1,8 +1,10 @@
 import React from 'react'
+import { useTasks } from '../hooks'
 import { Checkbox } from './Checkbox'
 
 export const Tasks = () => {
-  const tasks = []
+  const { tasks } = useTasks('1')
+  console.log(tasks)
   const projectName = ''
   return (
     <div className="tasks" data-testid="tasks">
