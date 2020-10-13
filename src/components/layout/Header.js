@@ -6,13 +6,15 @@ export default function Header() {
     <header className="header" data-testid="header">
       <nav>
         <div className="logo">
-          <img src="" alt="todolist" />
+          <img src="/images/logo.png" alt="todolist" />
         </div>
         <div className="settings">
           <ul>
-            <li>+</li>
-            <li>
-              Pizza slice ! <FaPizzaSlice />
+            <li data-testid="quick-add-task-action" className="settings__add">
+              +
+            </li>
+            <li data-testid="dark-mode-action" className="settings__dark-mode">
+              <FaPizzaSlice />
             </li>
           </ul>
         </div>
